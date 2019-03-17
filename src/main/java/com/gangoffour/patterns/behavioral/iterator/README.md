@@ -1,4 +1,4 @@
-##Behavioural pattern
+## Behavioural pattern
 * Chain of Responsibility Pattern
 * **Iterator Pattern**
 * Observer Pattern
@@ -7,7 +7,7 @@
 * Template Pattern
 * Visitor Pattern
 
-###Uses:
+### Uses:
 The Iterator provides ways to access elements of an aggregate object sequentially without exposing the underlying structure of the object.
 The client code isn’t coupled to concrete classes because it works with collections and iterators only through interfaces.
 * To access an aggregate object’s contents without exposing its internal representation.
@@ -15,11 +15,11 @@ The client code isn’t coupled to concrete classes because it works with collec
 * You can iterate over the same collection in parallel because each iterator object contains its own iteration state.
 * To provide a uniform interface for traversing different aggregate structures (that is, to support polymorphic iteration).
 
-###Demerits:
+### Demerits:
 * You cannot backtrack once traversed
 * Applying the pattern can be an overkill if your app only works with simple collections.
 
-##Example 
+## Example 
 Consider a user changing channels.
 
 We do not want remote to know the implementation details of moving over to next channels. 

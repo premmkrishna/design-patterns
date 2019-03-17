@@ -1,4 +1,9 @@
 package com.gangoffour.patterns.behavioral.observer;
 
-class Observer {
+
+interface Observer {
+
+    void update();
+
+    void setSubject(Subject subject);
 }
