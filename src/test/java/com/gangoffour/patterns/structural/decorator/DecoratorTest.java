@@ -1,4 +1,4 @@
 package com.gangoffour.patterns.structural.decorator;
 
-public class DecoratorTest {
+class DecoratorTest {
 }

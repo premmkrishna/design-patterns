@@ -1,4 +1,4 @@
 package com.gangoffour.patterns.structural.composite;
 
-public class CompositeTest {
+class CompositeTest {
 }
