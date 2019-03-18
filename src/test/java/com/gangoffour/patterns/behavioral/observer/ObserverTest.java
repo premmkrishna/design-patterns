@@ -15,11 +15,11 @@ public class ObserverTest {
     private Student student3;
 
     @Before
-    public void setUp(){
-        gradeSystem= new GradeSystem();
-        student1=new Student("premm");
-        student2=new Student("kitty");
-        student3=new Student("immortal");
+    public void setUp() {
+        gradeSystem = new GradeSystem();
+        student1 = new Student("premm");
+        student2 = new Student("kitty");
+        student3 = new Student("immortal");
         gradeSystem.registerObserver(student1);
         gradeSystem.registerObserver(student2);
         gradeSystem.registerObserver(student3);
@@ -29,22 +29,22 @@ public class ObserverTest {
     }
 
     @Test
-    public void testIncreaseMarkBy5(){
-        Assert.assertEquals(0,student1.getMark());
+    public void testIncreaseMarkBy5() {
+        Assert.assertEquals(0, student1.getMark());
         gradeSystem.increaseMarks();
-        Assert.assertEquals(5,student1.getMark());
-        Assert.assertEquals(5,student2.getMark());
+        Assert.assertEquals(5, student1.getMark());
+        Assert.assertEquals(5, student2.getMark());
     }
 
     @Test
-    public void testUnregisterObserver(){
-        Assert.assertEquals(0,student1.getMark());
+    public void testUnregisterObserver() {
+        Assert.assertEquals(0, student1.getMark());
         gradeSystem.increaseMarks();
-        Assert.assertEquals(5,student1.getMark());
-        Assert.assertEquals(5,student2.getMark());
+        Assert.assertEquals(5, student1.getMark());
+        Assert.assertEquals(5, student2.getMark());
         gradeSystem.unRegisterObserver(student1);
         gradeSystem.increaseMarks();
-        Assert.assertEquals(5,student1.getMark());
-        Assert.assertEquals(10,student2.getMark());
+        Assert.assertEquals(5, student1.getMark());
+        Assert.assertEquals(10, student2.getMark());
     }
 }

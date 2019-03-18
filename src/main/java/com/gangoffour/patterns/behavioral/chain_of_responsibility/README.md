@@ -10,6 +10,7 @@
 ### Uses:
 Each object has it's own responsibility and once it is complete,if needed it passes it to the next processing object.
 
+## Merits
 * This design pattern can be used when we want to decouple a request between sender and receiver. Due to this it facilitates many functionalities.
 * This pattern can also be used when multiple objects in the chain are designed to handle a request at run time. It improves efficiency.
 * Chain of responsibility pattern is used when we do not want to explicitly specify handlers in our code.
