@@ -16,9 +16,9 @@ The state pattern allows an object to alter its behavior when its internal state
 * State pattern helps in avoiding if-else or switch-case conditionals.
 
 ### Demerits:
-* You cannot backtrack once traversed
-* Applying the pattern can be an overkill if your app only works with simple collections.
-
+* A developer needs to write a large amount of code for the state schema. Depending on the number of different defined state transition methods and possible object states, you can write numerous methods. Thus, for N states with M transition methods, the total number of methods required will be (N+1)*M.
+  
+* An insurance policy with 5 different states and 5 methods for each (ignoring ListValidOperations method) requires 25 methods in total. The policy context type must also define the 5 state transition methods, increasing total methods required to 30.
 ## Example 
 Consider the typical example of regulators at home.
 At any point of time it can be having only one state and we have simple thrust to increase or decrease speed.
